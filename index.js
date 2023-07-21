@@ -25,9 +25,13 @@ function screen() {
 function save() {
     
     let resultEl = count + " - "
+    if (count !== 0) {
     windowResultEl.textContent += resultEl
     windowCountEl.textContent = 0
     count = 0 
+    } else {
+        
+    }
     
 
     let screens = screenCount + " - "
