@@ -65,11 +65,29 @@ button {
 }
 
 #window-el {
+    font-weight: light;
+    font-size: 15px;
+}
+
+#wintotal-el {
     font-weight: bold;
     font-size: 25px;
 }
 
+
 #screensave-el {
+    font-weight: light;
+    font-size: 15px;
+}
+
+#screentotal-el {
     font-weight: bold;
     font-size: 25px;
 }
+
+.horizontal-line::before {
+    content: '';
+    display: block;
+    border-top: 1px solid #000;
+  }
+  
