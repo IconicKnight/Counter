@@ -35,9 +35,14 @@ function save() {
     
 
     let screens = screenCount + " - "
-    screenResultEl.textContent += screens    
+    if (screenCount !== 0) {
+      screenResultEl.textContent += screens    
     screenCountEl.textContent = 0   
-    screenCount = 0
+    screenCount = 0  
+    } else {
+        
+    }
+    
     
 
     const windowsArray = resultEl.match(/\d+(\.\d+)?/g).map(parseFloat);
